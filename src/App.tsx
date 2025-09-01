@@ -11,6 +11,7 @@ const Hero = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 23px;
 `;
 
 const HeroTextStyled = styled.div`
@@ -18,7 +19,10 @@ const HeroTextStyled = styled.div`
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  font-size: 40px;
   padding: 16px;
+  line-height: 1;
+  padding: 18px 23px;
   text-transform: uppercase;
 `;
 
