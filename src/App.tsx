@@ -1,6 +1,7 @@
 import GlobalStyles from "./components/styles/GlobalStyles.styled.tsx";
 import heroImg from "./assets/images/mobile/image-hero.jpg";
 import headerLogo from "./assets/images/logo.svg";
+import vrImg from "./assets/images/mobile/image-interactive.jpg";
 import styled from "styled-components";
 
 const Hero = styled.div`
@@ -38,6 +39,14 @@ const LogoStyled = styled.img`
   width: 145px;
 `;
 
+const InteractiveSectionStyled = styled.section`
+  padding: 96px 23px 0;
+
+  img {
+    width: 100%;
+  }
+`;
+
 const App = () => {
   return (
     <>
@@ -49,6 +58,9 @@ const App = () => {
         <Hero>
           <HeroTextStyled>Immersive experiences that deliver</HeroTextStyled>
         </Hero>
+        <InteractiveSectionStyled>
+          <img src={vrImg} alt="" />
+        </InteractiveSectionStyled>
       </main>
     </>
   );
