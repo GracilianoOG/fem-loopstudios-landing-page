@@ -1,5 +1,6 @@
 import GlobalStyles from "./components/styles/GlobalStyles.styled.tsx";
 import heroImg from "./assets/images/mobile/image-hero.jpg";
+import headerLogo from "./assets/images/logo.svg";
 import styled from "styled-components";
 
 const Hero = styled.div`
@@ -26,10 +27,24 @@ const HeroTextStyled = styled.div`
   text-transform: uppercase;
 `;
 
+const HeaderStyled = styled.header`
+  position: fixed;
+  padding: 40px 23px 0;
+  top: 0px;
+`;
+
+const LogoStyled = styled.img`
+  display: block;
+  width: 145px;
+`;
+
 const App = () => {
   return (
     <>
       <GlobalStyles />
+      <HeaderStyled>
+        <LogoStyled src={headerLogo} alt="" />
+      </HeaderStyled>
       <main>
         <Hero>
           <HeroTextStyled>Immersive experiences that deliver</HeroTextStyled>
