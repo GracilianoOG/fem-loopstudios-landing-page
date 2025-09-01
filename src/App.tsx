@@ -8,7 +8,18 @@ const Hero = styled.div`
   background-size: cover;
   background-position: center;
   height: min(100vh, 650px);
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const HeroTextStyled = styled.div`
+  border: 2px solid white;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  padding: 16px;
+  text-transform: uppercase;
 `;
 
 const App = () => {
@@ -16,7 +27,9 @@ const App = () => {
     <>
       <GlobalStyles />
       <main>
-        <Hero />
+        <Hero>
+          <HeroTextStyled>Immersive experiences that deliver</HeroTextStyled>
+        </Hero>
       </main>
     </>
   );
