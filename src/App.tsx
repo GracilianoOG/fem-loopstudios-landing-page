@@ -53,6 +53,14 @@ const TextBoxStyled = styled.div`
   text-align: center;
 `;
 
+const StudioDescriptionStyled = styled.p`
+  font-family: "Alata", sans-serif;
+  font-size: 15.3px;
+  line-height: 1.62;
+  margin-top: 16px;
+  padding: 0 16px;
+`;
+
 const App = () => {
   return (
     <>
@@ -68,6 +76,12 @@ const App = () => {
           <img src={vrImg} alt="" />
           <TextBoxStyled>
             <h2>The leader in interactive VR</h2>
+            <StudioDescriptionStyled>
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </StudioDescriptionStyled>
           </TextBoxStyled>
         </InteractiveSectionStyled>
       </main>
