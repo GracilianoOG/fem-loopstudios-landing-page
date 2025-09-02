@@ -12,6 +12,11 @@ const GlobalStyles = createGlobalStyle`
   img {
     display: block;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+  }
 `;
 
 export default GlobalStyles;
