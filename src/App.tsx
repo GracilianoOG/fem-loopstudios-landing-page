@@ -54,6 +54,7 @@ const TextBoxStyled = styled.div`
 `;
 
 const StudioDescriptionStyled = styled.p`
+  color: var(--color-grey);
   font-family: "Alata", sans-serif;
   font-size: 15.3px;
   line-height: 1.62;
