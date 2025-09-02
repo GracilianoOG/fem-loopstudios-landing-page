@@ -47,6 +47,12 @@ const InteractiveSectionStyled = styled.section`
   }
 `;
 
+const TextBoxStyled = styled.div`
+  font-size: 21px;
+  margin-top: 48px;
+  text-align: center;
+`;
+
 const App = () => {
   return (
     <>
@@ -60,6 +66,9 @@ const App = () => {
         </Hero>
         <InteractiveSectionStyled>
           <img src={vrImg} alt="" />
+          <TextBoxStyled>
+            <h2>The leader in interactive VR</h2>
+          </TextBoxStyled>
         </InteractiveSectionStyled>
       </main>
     </>
