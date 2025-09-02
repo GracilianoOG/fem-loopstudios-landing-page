@@ -1,8 +1,8 @@
 import GlobalStyles from "./components/styles/GlobalStyles.styled.tsx";
 import heroImg from "./assets/images/mobile/image-hero.jpg";
 import headerLogo from "./assets/images/logo.svg";
-import vrImg from "./assets/images/mobile/image-interactive.jpg";
 import styled from "styled-components";
+import InteractiveSection from "./components/InteractiveSection";
 
 const Hero = styled.div`
   background-image: url(${heroImg});
@@ -39,29 +39,6 @@ const LogoStyled = styled.img`
   width: 145px;
 `;
 
-const InteractiveSectionStyled = styled.section`
-  padding: 96px 23px 0;
-
-  img {
-    width: 100%;
-  }
-`;
-
-const TextBoxStyled = styled.div`
-  font-size: 21px;
-  margin-top: 48px;
-  text-align: center;
-`;
-
-const StudioDescriptionStyled = styled.p`
-  color: var(--color-grey);
-  font-family: "Alata", sans-serif;
-  font-size: 15.3px;
-  line-height: 1.62;
-  margin-top: 16px;
-  padding: 0 16px;
-`;
-
 const App = () => {
   return (
     <>
@@ -73,18 +50,7 @@ const App = () => {
         <Hero>
           <HeroTextStyled>Immersive experiences that deliver</HeroTextStyled>
         </Hero>
-        <InteractiveSectionStyled>
-          <img src={vrImg} alt="" />
-          <TextBoxStyled>
-            <h2>The leader in interactive VR</h2>
-            <StudioDescriptionStyled>
-              Founded in 2011, Loopstudios has been producing world-class
-              virtual reality projects for some of the best companies around the
-              globe. Our award-winning creations have transformed businesses
-              through digital experiences that bind to their brand.
-            </StudioDescriptionStyled>
-          </TextBoxStyled>
-        </InteractiveSectionStyled>
+        <InteractiveSection />
       </main>
     </>
   );
