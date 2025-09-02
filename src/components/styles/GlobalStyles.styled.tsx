@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+  :root {
+    --color-black: hsl(0, 0%, 0%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-light-grey: hsl(0, 0%, 85%);
+    --color-white: hsl(0, 0%, 100%);
+  }
+
   *,
   *::before,
   *::after {
