@@ -66,34 +66,32 @@ const Footer = () => {
         </LinksListStyled>
       </div>
       <div>
-        <div>
-          <IconList>
-            <li>
-              <a href="">
-                <img src={fbIcon} alt="" />
-              </a>
-            </li>
+        <IconList>
+          <li>
+            <a href="">
+              <img src={fbIcon} alt="" />
+            </a>
+          </li>
 
-            <li>
-              <a href="">
-                <img src={twIcon} alt="" />
-              </a>
-            </li>
+          <li>
+            <a href="">
+              <img src={twIcon} alt="" />
+            </a>
+          </li>
 
-            <li>
-              <a href="">
-                <img src={ptIcon} alt="" />
-              </a>
-            </li>
+          <li>
+            <a href="">
+              <img src={ptIcon} alt="" />
+            </a>
+          </li>
 
-            <li>
-              <a href="">
-                <img src={igIcon} alt="" />
-              </a>
-            </li>
-          </IconList>
-          <FooterText>© 2021 Loopstudios. All rights reserved.</FooterText>
-        </div>
+          <li>
+            <a href="">
+              <img src={igIcon} alt="" />
+            </a>
+          </li>
+        </IconList>
+        <FooterText>© 2021 Loopstudios. All rights reserved.</FooterText>
       </div>
     </FooterStyled>
   );
