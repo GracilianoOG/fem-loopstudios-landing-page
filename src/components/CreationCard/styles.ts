@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import type { BackgroundImageType } from "./props";
 
-export const CardStyled = styled.div<{ $bgImage: [string, string] }>`
+export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
   background-image: url(${({ $bgImage }) => $bgImage[0]});
   background-repeat: no-repeat;
   background-size: cover;
