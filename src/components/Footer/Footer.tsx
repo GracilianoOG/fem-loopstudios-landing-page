@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Logo from "../Logo";
-import { FooterStyled } from "./styles";
+import { FooterStyled, IconList } from "./styles";
 import fbIcon from "../../assets/images/icon-facebook.svg";
 import twIcon from "../../assets/images/icon-twitter.svg";
 import ptIcon from "../../assets/images/icon-pinterest.svg";
@@ -28,17 +28,6 @@ const LinkStyled = styled.a`
   font-family: "Alata", sans-serif;
   font-size: 15px;
   text-decoration: none;
-`;
-
-const IconList = styled.ul`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-
-  @media screen and (min-width: 992px) {
-    justify-content: end;
-  }
 `;
 
 const FooterText = styled.p`

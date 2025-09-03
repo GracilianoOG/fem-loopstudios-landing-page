@@ -15,3 +15,14 @@ export const FooterStyled = styled.footer`
     padding-top: 44px;
   }
 `;
+
+export const IconList = styled.ul`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  @media screen and (min-width: 992px) {
+    justify-content: end;
+  }
+`;
