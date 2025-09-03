@@ -13,6 +13,12 @@ const LinksListStyled = styled.ul`
   gap: 20px;
   list-style: none;
   margin-top: 34px;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    gap: 34px;
+    margin-top: 26px;
+  }
 `;
 
 const LinkItemStyled = styled.li``;
@@ -29,6 +35,10 @@ const IconList = styled.ul`
   display: flex;
   justify-content: center;
   gap: 16px;
+
+  @media screen and (min-width: 992px) {
+    justify-content: end;
+  }
 `;
 
 const FooterText = styled.p`
@@ -36,6 +46,11 @@ const FooterText = styled.p`
   font-size: 15.5px;
   margin-top: 18px;
   color: var(--color-grey);
+
+  @media screen and (min-width: 992px) {
+    font-size: 15.6px;
+    margin-top: 26px;
+  }
 `;
 
 const Footer = () => {
