@@ -1,6 +1,7 @@
 import {
   CardsContainerStyled,
   CreationSectionStyled,
+  HeadingContainerStyled,
   MainHeadingStyled,
   MoreLinkStyled,
 } from "./styles";
@@ -33,10 +34,10 @@ import fishEyeDesktop from "../../assets/images/desktop/image-fisheye.jpg";
 const CreationSection = () => {
   return (
     <CreationSectionStyled>
-      <div>
+      <HeadingContainerStyled>
         <MainHeadingStyled>Our creations</MainHeadingStyled>
         <MoreLinkStyled href="#">See all</MoreLinkStyled>
-      </div>
+      </HeadingContainerStyled>
       <CardsContainerStyled>
         <CreationCard bgImage={[earthMobile, earthDesktop]}>
           Deep
