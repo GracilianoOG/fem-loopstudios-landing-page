@@ -12,6 +12,7 @@ export const HeadingContainerStyled = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 75px;
   }
 `;
 
