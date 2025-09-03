@@ -31,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     text-transform: uppercase;
   }
+
+  ul, ol {
+    list-style: none;
+  }
 `;
 
 export default GlobalStyles;
