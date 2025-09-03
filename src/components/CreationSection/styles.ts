@@ -5,10 +5,13 @@ export const CreationSectionStyled = styled.section`
   position: relative;
 `;
 
+export const HeadingContainerStyled = styled.div`
+  margin-bottom: 42px;
+`;
+
 export const MainHeadingStyled = styled.h2`
   text-align: center;
   font-size: 32px;
-  margin-bottom: 42px;
 `;
 
 export const CardsContainerStyled = styled.div`
