@@ -28,6 +28,10 @@ export const MainHeadingStyled = styled.h2`
 export const CardsContainerStyled = styled.div`
   display: grid;
   gap: 24px;
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 export const MoreLinkStyled = styled.a`
