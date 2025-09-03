@@ -7,11 +7,21 @@ export const CreationSectionStyled = styled.section`
 
 export const HeadingContainerStyled = styled.div`
   margin-bottom: 42px;
+
+  @media screen and (min-width: 992px) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const MainHeadingStyled = styled.h2`
   text-align: center;
   font-size: 32px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 48px;
+  }
 `;
 
 export const CardsContainerStyled = styled.div`
@@ -34,4 +44,10 @@ export const MoreLinkStyled = styled.a`
   transform: translateX(-50%);
   text-transform: uppercase;
   text-decoration: none;
+
+  @media screen and (min-width: 992px) {
+    margin: 0;
+    position: static;
+    transform: none;
+  }
 `;
