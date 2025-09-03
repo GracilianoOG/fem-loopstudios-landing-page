@@ -3,7 +3,7 @@ import heroImg from "./assets/images/mobile/image-hero.jpg";
 import headerLogo from "./assets/images/logo.svg";
 import styled from "styled-components";
 import InteractiveSection from "./components/InteractiveSection";
-import CreationSection from "./components/CreationSection/CreationSection.tsx";
+import CreationSection from "./components/CreationSection";
 
 const Hero = styled.div`
   background-image: url(${heroImg});
