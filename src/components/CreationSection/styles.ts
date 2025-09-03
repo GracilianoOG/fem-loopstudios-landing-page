@@ -7,4 +7,5 @@ export const CreationSectionStyled = styled.section`
 export const MainHeadingStyled = styled.h2`
   text-align: center;
   font-size: 32px;
+  margin-bottom: 42px;
 `;
