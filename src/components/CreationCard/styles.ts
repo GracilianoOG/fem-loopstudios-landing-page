@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import cardImg from "../../assets/images/mobile/image-deep-earth.jpg";
 
-export const CardStyled = styled.div`
-  background-image: url(${cardImg});
+export const CardStyled = styled.div<{ $bgImage: [string, string] }>`
+  background-image: url(${({ $bgImage }) => $bgImage[0]});
   background-repeat: no-repeat;
   background-size: cover;
   height: 120px;
