@@ -13,6 +13,10 @@ export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
   height: 120px;
   position: relative;
   width: 100%;
+
+  @media screen and (min-width: 992px) {
+    height: 450px;
+  }
 `;
 
 export const CardTitleStyled = styled.h3`
