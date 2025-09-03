@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import Logo from "../Logo";
 import { FooterStyled } from "./styles";
+import fbIcon from "../../assets/images/icon-facebook.svg";
+import twIcon from "../../assets/images/icon-twitter.svg";
+import ptIcon from "../../assets/images/icon-pinterest.svg";
+import igIcon from "../../assets/images/icon-instagram.svg";
 
 const LinksListStyled = styled.ul`
   align-items: center;
@@ -18,6 +22,11 @@ const LinkStyled = styled.a`
   font-family: "Alata", sans-serif;
   font-size: 15px;
   text-decoration: none;
+`;
+
+const IconList = styled.ul`
+  display: flex;
+  gap: 16px;
 `;
 
 const Footer = () => {
@@ -47,7 +56,35 @@ const Footer = () => {
           </LinkItemStyled>
         </LinksListStyled>
       </div>
-      <div></div>
+      <div>
+        <div>
+          <IconList>
+            <li>
+              <a href="">
+                <img src={fbIcon} alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src={twIcon} alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src={ptIcon} alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src={igIcon} alt="" />
+              </a>
+            </li>
+          </IconList>
+        </div>
+      </div>
     </FooterStyled>
   );
 };
