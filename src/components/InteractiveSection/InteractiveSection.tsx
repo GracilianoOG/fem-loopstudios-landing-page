@@ -1,6 +1,7 @@
 import vrImg from "../../assets/images/mobile/image-interactive.jpg";
 import {
   InteractiveSectionStyled,
+  MainHeadingStyled,
   StudioDescriptionStyled,
   TextBoxStyled,
 } from "./styles";
@@ -10,7 +11,7 @@ const InteractiveSection = () => {
     <InteractiveSectionStyled>
       <img src={vrImg} alt="" />
       <TextBoxStyled>
-        <h2>The leader in interactive VR</h2>
+        <MainHeadingStyled>The leader in interactive VR</MainHeadingStyled>
         <StudioDescriptionStyled>
           Founded in 2011, Loopstudios has been producing world-class virtual
           reality projects for some of the best companies around the globe. Our

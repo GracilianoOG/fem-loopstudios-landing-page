@@ -9,9 +9,14 @@ export const InteractiveSectionStyled = styled.section`
 `;
 
 export const TextBoxStyled = styled.div`
-  font-size: 21px;
   margin-top: 48px;
   text-align: center;
+`;
+
+export const MainHeadingStyled = styled.h2`
+  text-align: center;
+  font-size: 32px;
+  line-height: 1;
 `;
 
 export const StudioDescriptionStyled = styled.p`
