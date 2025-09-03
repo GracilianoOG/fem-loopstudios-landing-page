@@ -30,4 +30,10 @@ export const CardTitleStyled = styled.h3`
   left: 20px;
   // max-width: 110px;
   line-height: 1;
+
+  @media screen and (min-width: 992px) {
+    bottom: 32px;
+    font-size: 32px;
+    left: 40px;
+  }
 `;
