@@ -26,3 +26,15 @@ export const IconList = styled.ul`
     justify-content: end;
   }
 `;
+
+export const FooterText = styled.p`
+  font-family: "Alata", sans-serif;
+  font-size: 15.5px;
+  margin-top: 18px;
+  color: var(--color-grey);
+
+  @media screen and (min-width: 992px) {
+    font-size: 15.6px;
+    margin-top: 26px;
+  }
+`;

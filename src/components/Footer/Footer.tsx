@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Logo from "../Logo";
-import { FooterStyled, IconList } from "./styles";
+import { FooterStyled, FooterText, IconList } from "./styles";
 import fbIcon from "../../assets/images/icon-facebook.svg";
 import twIcon from "../../assets/images/icon-twitter.svg";
 import ptIcon from "../../assets/images/icon-pinterest.svg";
@@ -28,18 +28,6 @@ const LinkStyled = styled.a`
   font-family: "Alata", sans-serif;
   font-size: 15px;
   text-decoration: none;
-`;
-
-const FooterText = styled.p`
-  font-family: "Alata", sans-serif;
-  font-size: 15.5px;
-  margin-top: 18px;
-  color: var(--color-grey);
-
-  @media screen and (min-width: 992px) {
-    font-size: 15.6px;
-    margin-top: 26px;
-  }
 `;
 
 const Footer = () => {
