@@ -10,7 +10,7 @@ export const HeroStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 23px;
+  padding: var(--page-gutter);
 `;
 
 export const HeroTextStyled = styled.div`

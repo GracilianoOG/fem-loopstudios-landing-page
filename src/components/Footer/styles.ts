@@ -7,5 +7,5 @@ export const FooterStyled = styled.footer`
   gap: 30px;
   flex-direction: column;
   margin-top: 95px;
-  padding: 56px 16px;
+  padding: 56px var(--page-gutter);
 `;

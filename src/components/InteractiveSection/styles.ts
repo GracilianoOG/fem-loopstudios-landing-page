@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InteractiveSectionStyled = styled.section`
-  padding: 96px 23px 0;
+  padding: 96px var(--page-gutter) 0;
 
   img {
     width: 100%;

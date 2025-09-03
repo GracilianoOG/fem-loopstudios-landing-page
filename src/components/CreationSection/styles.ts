@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CreationSectionStyled = styled.section`
-  padding: 96px 23px 75px;
+  padding: 96px var(--page-gutter) 75px;
   position: relative;
 `;
 
