@@ -1,10 +1,10 @@
-import { HeaderStyled, LogoStyled } from "./styles";
-import headerLogo from "../../assets/images/logo.svg";
+import { HeaderStyled } from "./styles";
+import Logo from "../Logo";
 
 const Header = () => {
   return (
     <HeaderStyled>
-      <LogoStyled src={headerLogo} alt="" />
+      <Logo />
     </HeaderStyled>
   );
 };
