@@ -35,28 +35,36 @@ const CreationSection = () => {
       <MainHeadingStyled>Our creations</MainHeadingStyled>
       <CardsContainerStyled>
         <CreationCard bgImage={[earthMobile, earthDesktop]}>
-          Deep earth
+          Deep
+          <br /> earth
         </CreationCard>
         <CreationCard bgImage={[arcadeMobile, arcadeDesktop]}>
-          Night arcade
+          Night
+          <br /> arcade
         </CreationCard>
         <CreationCard bgImage={[soccerMobile, soccerDesktop]}>
-          Soccer team VR
+          Soccer
+          <br /> team VR
         </CreationCard>
         <CreationCard bgImage={[gridMobile, gridDesktop]}>
-          The grid
+          The
+          <br /> grid
         </CreationCard>
         <CreationCard bgImage={[vrMobile, vrDesktop]}>
-          From up above VR
+          From up
+          <br /> above VR
         </CreationCard>
         <CreationCard bgImage={[borealisMobile, borealisDesktop]}>
-          Pocket borealis
+          Pocket
+          <br /> borealis
         </CreationCard>
         <CreationCard bgImage={[curiosityMobile, curiosityDesktop]}>
-          The curiosity
+          The
+          <br /> curiosity
         </CreationCard>
         <CreationCard bgImage={[fishEyeMobile, fishEyeDesktop]}>
-          Make it fisheye
+          Make it
+          <br /> fisheye
         </CreationCard>
       </CardsContainerStyled>
     </CreationSectionStyled>
