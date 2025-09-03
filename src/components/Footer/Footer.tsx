@@ -25,6 +25,7 @@ const LinkStyled = styled.a`
 `;
 
 const IconList = styled.ul`
+  align-items: center;
   display: flex;
   gap: 16px;
 `;
