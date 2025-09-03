@@ -31,6 +31,13 @@ const IconList = styled.ul`
   gap: 16px;
 `;
 
+const FooterText = styled.p`
+  font-family: "Alata", sans-serif;
+  font-size: 15.5px;
+  margin-top: 18px;
+  color: var(--color-grey);
+`;
+
 const Footer = () => {
   return (
     <FooterStyled>
@@ -85,6 +92,7 @@ const Footer = () => {
               </a>
             </li>
           </IconList>
+          <FooterText>© 2021 Loopstudios. All rights reserved.</FooterText>
         </div>
       </div>
     </FooterStyled>
