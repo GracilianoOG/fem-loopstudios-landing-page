@@ -6,6 +6,12 @@ const GlobalStyles = createGlobalStyle`
     --color-grey: hsl(0, 0%, 50%);
     --color-light-grey: hsl(0, 0%, 85%);
     --color-white: hsl(0, 0%, 100%);
+
+    --page-gutter: 23px;
+
+    @media screen and (min-width: 992px) {
+      --page-gutter: 164px;
+    }
   }
 
   *,
