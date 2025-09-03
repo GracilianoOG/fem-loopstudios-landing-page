@@ -9,3 +9,8 @@ export const MainHeadingStyled = styled.h2`
   font-size: 32px;
   margin-bottom: 42px;
 `;
+
+export const CardsContainerStyled = styled.div`
+  display: grid;
+  gap: 24px;
+`;

@@ -1,5 +1,8 @@
-import styled from "styled-components";
-import { CreationSectionStyled, MainHeadingStyled } from "./styles";
+import {
+  CardsContainerStyled,
+  CreationSectionStyled,
+  MainHeadingStyled,
+} from "./styles";
 import CreationCard from "../CreationCard";
 // Deep earth
 import earthMobile from "../../assets/images/mobile/image-deep-earth.jpg";
@@ -25,11 +28,6 @@ import curiosityDesktop from "../../assets/images/desktop/image-curiosity.jpg";
 // Make it fisheye
 import fishEyeMobile from "../../assets/images/mobile/image-fisheye.jpg";
 import fishEyeDesktop from "../../assets/images/desktop/image-fisheye.jpg";
-
-export const CardsContainerStyled = styled.div`
-  display: grid;
-  gap: 24px;
-`;
 
 const CreationSection = () => {
   return (
