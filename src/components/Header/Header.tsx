@@ -12,7 +12,7 @@ const Hamburger = () => {
   };
 
   return (
-    <HamburgerStyled onClick={handleClick}>
+    <HamburgerStyled onClick={handleClick} aria-label="Toggle navigation menu">
       <img src={isOpen ? hamburgerIcon : closeIcon} alt="" />
     </HamburgerStyled>
   );
