@@ -3,6 +3,7 @@ import Logo from "../Logo";
 import hamburgerIcon from "../../assets/images/icon-hamburger.svg";
 import closeIcon from "../../assets/images/icon-close.svg";
 import { useState } from "react";
+import { HeaderNavMenu } from "../NavMenu/NavMenu";
 
 const Hamburger = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
@@ -27,6 +28,7 @@ const Header = () => {
     <HeaderStyled>
       <Logo />
       <Hamburger />
+      <HeaderNavMenu />
     </HeaderStyled>
   );
 };
