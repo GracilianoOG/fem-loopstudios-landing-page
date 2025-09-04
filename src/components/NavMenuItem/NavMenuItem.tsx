@@ -1,9 +1,5 @@
+import type { NavMenuItemProps } from "./props";
 import { NavItemStyled, NavLinkStyled } from "./styles";
-
-interface NavMenuItemProps {
-  title: string;
-  href: string;
-}
 
 const NavMenuItem = ({ href, title }: NavMenuItemProps) => {
   return (
