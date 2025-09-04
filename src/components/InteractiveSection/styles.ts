@@ -9,6 +9,7 @@ export const InteractiveSectionStyled = styled.section`
 
   @media screen and (min-width: 992px) {
     position: relative;
+    padding-top: 160px;
 
     img {
       max-width: 730px;
