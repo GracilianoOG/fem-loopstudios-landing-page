@@ -16,7 +16,7 @@ export const HeroStyled = styled.section`
   }
 `;
 
-export const HeroTextStyled = styled.div`
+export const HeroTextStyled = styled.h2`
   border: 2px solid white;
   color: white;
   font-family: "Josefin Sans", sans-serif;
