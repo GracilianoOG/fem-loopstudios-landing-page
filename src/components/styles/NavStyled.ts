@@ -1,20 +1,20 @@
 import styled, { css } from "styled-components";
 
-const NavListStyled = styled.ul`
+export const NavListStyled = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
   list-style: none;
 `;
 
-const navListDefault = css`
+export const navListDefault = css`
   font-family: "Alata", sans-serif;
   font-size: 15px;
   list-style: none;
   text-align: center;
 `;
 
-const navListDesktopDefault = css`
+export const navListDesktopDefault = css`
   flex-direction: row;
   gap: 34px;
 `;
