@@ -2,7 +2,7 @@ import styled from "styled-components";
 import heroImgMobile from "../../assets/images/mobile/image-hero.jpg";
 import heroImgDesktop from "../../assets/images/desktop/image-hero.jpg";
 
-export const HeroStyled = styled.div`
+export const HeroStyled = styled.section`
   background-image: url(${heroImgMobile});
   background-repeat: no-repeat;
   background-size: cover;
