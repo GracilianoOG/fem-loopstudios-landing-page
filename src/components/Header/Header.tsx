@@ -3,20 +3,11 @@ import Logo from "../Logo";
 import hamburgerIcon from "../../assets/images/icon-hamburger.svg";
 import closeIcon from "../../assets/images/icon-close.svg";
 import { HeaderNavMenu } from "../NavMenu/NavMenu";
-import { useContext } from "react";
-import MobileNavMenuContext from "../../contexts/MobileNavMenuContext";
 import MobileNavMenuProvider from "../../providers/MobileNavMenuProvider";
+import useMobileNavMenu from "../../hooks/useMobileNavMenu";
 
 const Hamburger = () => {
-  const context = useContext(MobileNavMenuContext);
-
-  if (!context) {
-    throw new Error(
-      "MobileNavMenuContext is not within a MobileNavMenuProvider."
-    );
-  }
-
-  const { setIsToggled, isToggled } = context;
+  const { setIsToggled, isToggled } = useMobileNavMenu();
 
   const handleClick = () => {
     setIsToggled(prev => !prev);
