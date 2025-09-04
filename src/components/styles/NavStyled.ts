@@ -18,13 +18,3 @@ export const navListDesktopDefault = css`
   flex-direction: row;
   gap: 34px;
 `;
-
-export const FooterListStyled = styled(NavListStyled)`
-  ${navListDefault};
-  margin-top: 34px;
-
-  @media screen and (min-width: 992px) {
-    ${navListDesktopDefault};
-    margin-top: 26px;
-  }
-`;
