@@ -19,12 +19,22 @@ const navListDesktopDefault = css`
   gap: 34px;
 `;
 
-export const HeaderNavMenuStyled = styled.nav`
+export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
+  ${({ $hidden }) =>
+    $hidden &&
+    css`
+      display: none;
+    `}
+
   @media screen and (max-width: 991px) {
     height: 100vh;
     inset: 0;
     position: absolute;
     width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: initial;
   }
 `;
 
