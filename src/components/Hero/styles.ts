@@ -7,10 +7,8 @@ export const HeroStyled = styled.div`
   background-size: cover;
   background-position: center;
   height: min(100vh, 650px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: var(--page-gutter);
+  position: relative;
 `;
 
 export const HeroTextStyled = styled.div`
@@ -20,7 +18,11 @@ export const HeroTextStyled = styled.div`
   font-weight: 300;
   font-size: 40px;
   padding: 16px;
+  position: relative;
+  top: 50%;
   line-height: 1;
   padding: 18px 23px;
+  transform: translateY(-50%);
   text-transform: uppercase;
+  width: 100%;
 `;
