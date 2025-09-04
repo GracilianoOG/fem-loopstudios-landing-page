@@ -28,6 +28,15 @@ export const NavLinkStyled = styled.a`
   text-decoration: none;
 `;
 
+export const HeaderNavMenuStyled = styled.nav`
+  @media screen and (max-width: 991px) {
+    height: 100vh;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+  }
+`;
+
 export const HeaderListStyled = styled(NavListStyled)`
   @media screen and (max-width: 991px) {
     align-items: start;
@@ -35,10 +44,8 @@ export const HeaderListStyled = styled(NavListStyled)`
     font-size: 24px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
-    height: 100vh;
-    inset: 0;
+    height: 100%;
     justify-content: center;
-    position: absolute;
     padding-left: var(--page-gutter);
     text-transform: uppercase;
     width: 100%;
