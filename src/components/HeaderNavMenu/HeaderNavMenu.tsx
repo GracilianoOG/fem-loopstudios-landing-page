@@ -6,7 +6,7 @@ const HeaderNavMenu = () => {
   const { isToggled } = useMobileNavMenu();
 
   return (
-    <HeaderNavMenuStyled $hidden={!isToggled}>
+    <HeaderNavMenuStyled id="main-nav" $hidden={!isToggled}>
       <HeaderListStyled>
         <NavMenuItem title="About" href="#" />
         <NavMenuItem title="Careers" href="#" />
