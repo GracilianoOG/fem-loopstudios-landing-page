@@ -12,7 +12,11 @@ const Hamburger = () => {
   };
 
   return (
-    <HamburgerStyled onClick={handleClick} aria-label="Toggle navigation menu">
+    <HamburgerStyled
+      onClick={handleClick}
+      aria-label="Toggle navigation menu"
+      aria-expanded={isToggled}
+    >
       <img src={isToggled ? closeIcon : hamburgerIcon} alt="" />
     </HamburgerStyled>
   );
