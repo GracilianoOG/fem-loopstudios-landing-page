@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <FooterStyled>
       <div>
-        <Logo />
+        <Logo small />
         <LinksListStyled>
           <LinkItemStyled>
             <LinkStyled href="">About</LinkStyled>
