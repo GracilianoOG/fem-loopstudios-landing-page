@@ -14,3 +14,9 @@ export const HeaderStyled = styled.header`
     padding-top: 64px;
   }
 `;
+
+export const Hamburger = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`;
