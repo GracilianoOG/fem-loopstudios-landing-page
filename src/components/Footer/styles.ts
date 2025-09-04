@@ -13,6 +13,7 @@ export const FooterStyled = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     padding-top: 44px;
+    margin-top: 109px;
   }
 `;
 
