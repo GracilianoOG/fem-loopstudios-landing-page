@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const CreationSectionStyled = styled.section`
   padding: 96px var(--page-gutter) 75px;
   position: relative;
+
+  @media screen and (min-width: 992px) {
+    padding-top: 180px;
+  }
 `;
 
 export const HeadingContainerStyled = styled.div`
