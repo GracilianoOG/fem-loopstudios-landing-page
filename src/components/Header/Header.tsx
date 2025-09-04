@@ -5,15 +5,15 @@ import closeIcon from "../../assets/images/icon-close.svg";
 import { useState } from "react";
 
 const Hamburger = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isToggled, setIsToggled] = useState<boolean>(false);
 
   const handleClick = () => {
-    setIsOpen(prev => !prev);
+    setIsToggled(prev => !prev);
   };
 
   return (
     <HamburgerStyled onClick={handleClick} aria-label="Toggle navigation menu">
-      <img src={isOpen ? hamburgerIcon : closeIcon} alt="" />
+      <img src={isToggled ? closeIcon : hamburgerIcon} alt="" />
     </HamburgerStyled>
   );
 };
