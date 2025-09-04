@@ -1,61 +1,17 @@
-import styled from "styled-components";
 import Logo from "../Logo";
 import { FooterStyled, FooterText, IconList } from "./styles";
 import fbIcon from "../../assets/images/icon-facebook.svg";
 import twIcon from "../../assets/images/icon-twitter.svg";
 import ptIcon from "../../assets/images/icon-pinterest.svg";
 import igIcon from "../../assets/images/icon-instagram.svg";
-
-const LinksListStyled = styled.ul`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  list-style: none;
-  margin-top: 34px;
-
-  @media screen and (min-width: 992px) {
-    flex-direction: row;
-    gap: 34px;
-    margin-top: 26px;
-  }
-`;
-
-const LinkItemStyled = styled.li``;
-
-const LinkStyled = styled.a`
-  color: white;
-  font-family: "Alata", sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-`;
+import { FooterNavMenu } from "../NavMenu/NavMenu";
 
 const Footer = () => {
   return (
     <FooterStyled>
       <div>
         <Logo small />
-        <LinksListStyled>
-          <LinkItemStyled>
-            <LinkStyled href="">About</LinkStyled>
-          </LinkItemStyled>
-
-          <LinkItemStyled>
-            <LinkStyled href="">Careers</LinkStyled>
-          </LinkItemStyled>
-
-          <LinkItemStyled>
-            <LinkStyled href="">Events</LinkStyled>
-          </LinkItemStyled>
-
-          <LinkItemStyled>
-            <LinkStyled href="">Products</LinkStyled>
-          </LinkItemStyled>
-
-          <LinkItemStyled>
-            <LinkStyled href="">Support</LinkStyled>
-          </LinkItemStyled>
-        </LinksListStyled>
+        <FooterNavMenu />
       </div>
       <div>
         <IconList>
