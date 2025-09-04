@@ -1,4 +1,5 @@
-import vrImg from "../../assets/images/mobile/image-interactive.jpg";
+import vrImgMobile from "../../assets/images/mobile/image-interactive.jpg";
+import vrImgDesktop from "../../assets/images/desktop/image-interactive.jpg";
 import {
   InteractiveSectionStyled,
   MainHeadingStyled,
@@ -9,7 +10,13 @@ import {
 const InteractiveSection = () => {
   return (
     <InteractiveSectionStyled>
-      <img src={vrImg} alt="" />
+      <picture>
+        <source media="(min-width: 992px)" srcSet={vrImgDesktop} />
+        <img
+          src={vrImgMobile}
+          alt="A man wearing VR classes mimicking a monster."
+        />
+      </picture>
       <TextBoxStyled>
         <MainHeadingStyled>The leader in interactive VR</MainHeadingStyled>
         <StudioDescriptionStyled>
