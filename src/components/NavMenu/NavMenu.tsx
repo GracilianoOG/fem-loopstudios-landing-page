@@ -1,22 +1,13 @@
-import { useContext } from "react";
+import useMobileNavMenu from "../../hooks/useMobileNavMenu";
 import NavMenuItem from "../NavMenuItem";
 import {
   FooterListStyled,
   HeaderListStyled,
   HeaderNavMenuStyled,
 } from "../styles/NavStyled";
-import MobileNavMenuContext from "../../contexts/MobileNavMenuContext";
 
 export const HeaderNavMenu = () => {
-  const context = useContext(MobileNavMenuContext);
-
-  if (!context) {
-    throw new Error(
-      "MobileNavMenuContext is not within a MobileNavMenuProvider."
-    );
-  }
-
-  const { isToggled } = context;
+  const { isToggled } = useMobileNavMenu();
 
   return (
     <HeaderNavMenuStyled $hidden={!isToggled}>
