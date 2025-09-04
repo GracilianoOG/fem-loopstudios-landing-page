@@ -1,11 +1,19 @@
 import { HamburgerStyled, HeaderStyled } from "./styles";
 import Logo from "../Logo";
 import hamburgerIcon from "../../assets/images/icon-hamburger.svg";
+import closeIcon from "../../assets/images/icon-close.svg";
+import { useState } from "react";
 
 const Hamburger = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setIsOpen(prev => !prev);
+  };
+
   return (
-    <HamburgerStyled>
-      <img src={hamburgerIcon} alt="" />
+    <HamburgerStyled onClick={handleClick}>
+      <img src={isOpen ? hamburgerIcon : closeIcon} alt="" />
     </HamburgerStyled>
   );
 };
