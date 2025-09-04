@@ -15,7 +15,7 @@ export const HeaderStyled = styled.header`
   }
 `;
 
-export const Hamburger = styled.button`
+export const HamburgerStyled = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
