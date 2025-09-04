@@ -19,15 +19,6 @@ const navListDesktopDefault = css`
   gap: 34px;
 `;
 
-export const NavItemStyled = styled.li``;
-
-export const NavLinkStyled = styled.a`
-  color: white;
-  font-family: inherit;
-  font-size: inherit;
-  text-decoration: none;
-`;
-
 export const HeaderNavMenuStyled = styled.nav`
   @media screen and (max-width: 991px) {
     height: 100vh;
