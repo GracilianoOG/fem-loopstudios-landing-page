@@ -15,6 +15,7 @@ const Hamburger = () => {
       onClick={handleClick}
       aria-label="Toggle navigation menu"
       aria-expanded={isToggled}
+      aria-controls="main-nav"
     >
       <img src={isToggled ? closeIcon : hamburgerIcon} alt="" />
     </HamburgerStyled>
