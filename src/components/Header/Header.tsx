@@ -2,9 +2,9 @@ import { HamburgerStyled, HeaderStyled } from "./styles";
 import Logo from "../Logo";
 import hamburgerIcon from "../../assets/images/icon-hamburger.svg";
 import closeIcon from "../../assets/images/icon-close.svg";
-import { HeaderNavMenu } from "../NavMenu/NavMenu";
 import MobileNavMenuProvider from "../../providers/MobileNavMenuProvider";
 import useMobileNavMenu from "../../hooks/useMobileNavMenu";
+import HeaderNavMenu from "../HeaderNavMenu";
 
 const Hamburger = () => {
   const { setIsToggled, isToggled } = useMobileNavMenu();
