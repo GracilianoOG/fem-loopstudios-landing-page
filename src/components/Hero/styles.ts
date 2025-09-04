@@ -25,4 +25,11 @@ export const HeroTextStyled = styled.div`
   transform: translateY(-50%);
   text-transform: uppercase;
   width: 100%;
+
+  @media screen and (min-width: 992px) {
+    font-size: 72px;
+    max-width: 652px;
+    padding: 30px 40px;
+    top: 62%;
+  }
 `;
