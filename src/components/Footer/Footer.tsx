@@ -4,7 +4,7 @@ import fbIcon from "../../assets/images/icon-facebook.svg";
 import twIcon from "../../assets/images/icon-twitter.svg";
 import ptIcon from "../../assets/images/icon-pinterest.svg";
 import igIcon from "../../assets/images/icon-instagram.svg";
-import { FooterNavMenu } from "../NavMenu/NavMenu";
+import FooterNavMenu from "../FooterNavMenu";
 
 const Footer = () => {
   return (
