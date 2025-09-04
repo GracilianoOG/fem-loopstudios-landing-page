@@ -3,7 +3,7 @@ import {
   navListDefault,
   navListDesktopDefault,
   NavListStyled,
-} from "../styles/NavStyled";
+} from "../../styles/NavStyled";
 
 export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
   ${({ $hidden }) =>

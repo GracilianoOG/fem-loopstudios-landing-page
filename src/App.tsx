@@ -1,4 +1,4 @@
-import GlobalStyles from "./components/styles/GlobalStyles.styled.tsx";
+import GlobalStyles from "./styles/GlobalStyles.styled.tsx";
 import InteractiveSection from "./components/InteractiveSection";
 import CreationSection from "./components/CreationSection";
 import Hero from "./components/Hero";
