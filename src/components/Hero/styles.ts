@@ -1,14 +1,19 @@
 import styled from "styled-components";
-import heroImg from "../../assets/images/mobile/image-hero.jpg";
+import heroImgMobile from "../../assets/images/mobile/image-hero.jpg";
+import heroImgDesktop from "../../assets/images/desktop/image-hero.jpg";
 
 export const HeroStyled = styled.div`
-  background-image: url(${heroImg});
+  background-image: url(${heroImgMobile});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: min(100vh, 650px);
   padding: var(--page-gutter);
   position: relative;
+
+  @media screen and (min-width: 992px) {
+    background-image: url(${heroImgDesktop});
+  }
 `;
 
 export const HeroTextStyled = styled.div`
