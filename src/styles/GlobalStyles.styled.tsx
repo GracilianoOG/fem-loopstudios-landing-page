@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { mediaQueries } from "../utils/mediaQueries";
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -9,19 +10,19 @@ const GlobalStyles = createGlobalStyle`
 
     --page-gutter: 23px;
 
-    @media screen and (min-width: 768px) {
+    ${mediaQueries.tablet} {
       --page-gutter: 60px;
     }
 
-    @media screen and (min-width: 992px) {
+    ${mediaQueries.laptop} {
       --page-gutter: 100px;
     }
 
-    @media screen and (min-width: 1200px) {
+    ${mediaQueries.desktop} {
       --page-gutter: 132px;
     }
 
-    @media screen and (min-width: 1400px) {
+    ${mediaQueries.largeDesktop} {
       --page-gutter: 164px;
     }
   }
