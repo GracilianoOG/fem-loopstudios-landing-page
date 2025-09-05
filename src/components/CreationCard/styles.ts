@@ -12,9 +12,13 @@ export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
     var(--bg-image-url);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120px;
+  height: clamp(120px, 30vw, 170px);
   position: relative;
   width: 100%;
+
+  @media screen and (min-width: 576px) {
+    height: max(120px, 20vw);
+  }
 
   @media screen and (min-width: 992px) {
     --bg-image-url: url(${({ $bgImage }) => $bgImage[1]});
