@@ -4,7 +4,7 @@ import {
   navListDesktopDefault,
   NavListStyled,
 } from "../../styles/NavStyled";
-import { mediaQueries } from "../../utils/mediaQueries";
+import { mediaQueries, mediaQueriesMax } from "../../utils/mediaQueries";
 
 export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
   ${({ $hidden }) =>
@@ -13,7 +13,7 @@ export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
       display: none;
     `}
 
-  @media screen and (max-width: 991px) {
+  ${mediaQueriesMax.laptop} {
     height: 100vh;
     inset: 0;
     position: absolute;
@@ -26,7 +26,7 @@ export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
 `;
 
 export const HeaderListStyled = styled(NavListStyled)`
-  @media screen and (max-width: 991px) {
+  ${mediaQueriesMax.laptop} {
     align-items: start;
     background-color: black;
     font-size: 24px;
