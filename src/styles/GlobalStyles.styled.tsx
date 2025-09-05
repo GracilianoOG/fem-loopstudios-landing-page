@@ -9,7 +9,19 @@ const GlobalStyles = createGlobalStyle`
 
     --page-gutter: 23px;
 
+    @media screen and (min-width: 768px) {
+      --page-gutter: 60px;
+    }
+
     @media screen and (min-width: 992px) {
+      --page-gutter: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --page-gutter: 132px;
+    }
+
+    @media screen and (min-width: 1400px) {
       --page-gutter: 164px;
     }
   }
