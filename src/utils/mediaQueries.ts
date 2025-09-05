@@ -1,4 +1,4 @@
-import { breakpoints } from "./breakpoints";
+import { breakpoints, breakpointsMax } from "./breakpoints";
 
 const MEDIA_TYPE = "@media screen" as const;
 
@@ -8,4 +8,8 @@ export const mediaQueries = {
   laptop: `${MEDIA_TYPE} and (min-width: ${breakpoints.lg})`,
   desktop: `${MEDIA_TYPE} and (min-width: ${breakpoints.xl})`,
   largeDesktop: `${MEDIA_TYPE} and (min-width: ${breakpoints.xxl})`,
+} as const;
+
+export const mediaQueriesMax = {
+  laptop: `${MEDIA_TYPE} and (max-width: ${breakpointsMax.lg})`,
 } as const;
