@@ -38,6 +38,10 @@ export const CardsContainerStyled = styled.div`
   }
 
   @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
