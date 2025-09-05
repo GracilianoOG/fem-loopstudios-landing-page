@@ -5,3 +5,7 @@ export const breakpoints = {
   xl: "75rem", // 1200px
   xxl: "87.5rem", // 1400px
 } as const;
+
+export const breakpointsMax = {
+  lg: "61.999rem", // 991.98px
+} as const;
