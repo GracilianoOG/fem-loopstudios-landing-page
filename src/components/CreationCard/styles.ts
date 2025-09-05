@@ -27,7 +27,7 @@ export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
 `;
 
 export const CardTitleStyled = styled.h3`
-  font-size: 24px;
+  font-size: clamp(24px, 2.6vw, 32px);
   color: white;
   position: absolute;
   bottom: 20px;
@@ -35,9 +35,8 @@ export const CardTitleStyled = styled.h3`
   // max-width: 110px;
   line-height: 1;
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1400px) {
     bottom: 32px;
-    font-size: 32px;
     left: 40px;
   }
 `;
