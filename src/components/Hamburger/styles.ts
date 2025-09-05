@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaQueries } from "../../utils/mediaQueries";
 
 export const HamburgerStyled = styled.button`
   border: none;
@@ -6,7 +7,7 @@ export const HamburgerStyled = styled.button`
   cursor: pointer;
   z-index: 2;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     display: none;
   }
 `;

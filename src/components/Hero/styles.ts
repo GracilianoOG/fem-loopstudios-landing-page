@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import heroImgMobile from "../../assets/images/mobile/image-hero.jpg";
 import heroImgDesktop from "../../assets/images/desktop/image-hero.jpg";
+import { mediaQueries } from "../../utils/mediaQueries";
 
 export const HeroStyled = styled.section`
   background-image: url(${heroImgMobile});
@@ -11,7 +12,7 @@ export const HeroStyled = styled.section`
   padding: var(--page-gutter);
   position: relative;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     background-image: url(${heroImgDesktop});
   }
 `;
@@ -31,7 +32,7 @@ export const HeroTextStyled = styled.h2`
   text-transform: uppercase;
   width: 100%;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     font-size: 72px;
     max-width: 652px;
     padding: 30px 40px;

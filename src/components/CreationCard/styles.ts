@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import type { BackgroundImageType } from "./props";
+import { mediaQueries } from "../../utils/mediaQueries";
 
 export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
   --bg-image-url: url(${({ $bgImage }) => $bgImage[0]});
@@ -16,11 +17,11 @@ export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
   position: relative;
   width: 100%;
 
-  @media screen and (min-width: 576px) {
+  ${mediaQueries.mobile} {
     height: max(120px, 20vw);
   }
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     --bg-image-url: url(${({ $bgImage }) => $bgImage[1]});
     height: 450px;
   }
@@ -35,7 +36,7 @@ export const CardTitleStyled = styled.h3`
   // max-width: 110px;
   line-height: 1;
 
-  @media screen and (min-width: 1400px) {
+  ${mediaQueries.largeDesktop} {
     bottom: 32px;
     left: 40px;
   }

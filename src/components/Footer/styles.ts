@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaQueries } from "../../utils/mediaQueries";
 
 export const FooterStyled = styled.footer`
   background-color: var(--color-black);
@@ -9,7 +10,7 @@ export const FooterStyled = styled.footer`
   margin-top: 95px;
   padding: 56px var(--page-gutter);
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 44px;
@@ -23,7 +24,7 @@ export const IconList = styled.ul`
   justify-content: center;
   gap: 16px;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     justify-content: end;
   }
 `;
@@ -34,7 +35,7 @@ export const FooterText = styled.p`
   margin-top: 18px;
   color: var(--color-grey);
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     font-size: 15.6px;
     margin-top: 26px;
   }

@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { mediaQueries } from "../../utils/mediaQueries";
 
 export const CreationSectionStyled = styled.section`
   padding: 96px var(--page-gutter) 75px;
   position: relative;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     padding-top: 180px;
   }
 `;
@@ -12,7 +13,7 @@ export const CreationSectionStyled = styled.section`
 export const HeadingContainerStyled = styled.div`
   margin-bottom: 42px;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@ export const MainHeadingStyled = styled.h2`
   text-align: center;
   font-size: 32px;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     font-size: 48px;
   }
 `;
@@ -33,19 +34,19 @@ export const CardsContainerStyled = styled.div`
   display: grid;
   gap: 24px;
 
-  @media screen and (min-width: 576px) {
+  ${mediaQueries.mobile} {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media screen and (min-width: 1200px) {
+  ${mediaQueries.desktop} {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @media screen and (min-width: 1400px) {
+  ${mediaQueries.largeDesktop} {
     gap: 30px;
   }
 `;
@@ -66,7 +67,7 @@ export const MoreLinkStyled = styled.a`
   text-transform: uppercase;
   text-decoration: none;
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     margin: 0;
     position: static;
     transform: none;

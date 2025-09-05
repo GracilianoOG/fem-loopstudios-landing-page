@@ -4,6 +4,7 @@ import {
   navListDesktopDefault,
   NavListStyled,
 } from "../../styles/NavStyled";
+import { mediaQueries } from "../../utils/mediaQueries";
 
 export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
   ${({ $hidden }) =>
@@ -19,7 +20,7 @@ export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
     width: 100%;
   }
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     display: initial;
   }
 `;
@@ -38,7 +39,7 @@ export const HeaderListStyled = styled(NavListStyled)`
     width: 100%;
   }
 
-  @media screen and (min-width: 992px) {
+  ${mediaQueries.laptop} {
     ${navListDefault};
     ${navListDesktopDefault};
   }
