@@ -74,12 +74,12 @@ export const MoreLinkStyled = styled.a`
     color: var(--color-white);
   }
 
-  ${backgroundSlideEffect};
-
   ${mediaQueries.laptop} {
     inset: auto;
     margin: 0;
     position: relative;
     transform: none;
+
+    ${backgroundSlideEffect};
   }
 `;
