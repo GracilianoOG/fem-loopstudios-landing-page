@@ -39,35 +39,35 @@ const CreationSection = () => {
         <MoreLinkStyled href="#">See all</MoreLinkStyled>
       </HeadingContainerStyled>
       <CardsContainerStyled>
-        <CreationCard bgImage={[earthMobile, earthDesktop]}>
+        <CreationCard href="#" bgImage={[earthMobile, earthDesktop]}>
           Deep
           <br /> earth
         </CreationCard>
-        <CreationCard bgImage={[arcadeMobile, arcadeDesktop]}>
+        <CreationCard href="#" bgImage={[arcadeMobile, arcadeDesktop]}>
           Night
           <br /> arcade
         </CreationCard>
-        <CreationCard bgImage={[soccerMobile, soccerDesktop]}>
+        <CreationCard href="#" bgImage={[soccerMobile, soccerDesktop]}>
           Soccer
           <br /> team VR
         </CreationCard>
-        <CreationCard bgImage={[gridMobile, gridDesktop]}>
+        <CreationCard href="#" bgImage={[gridMobile, gridDesktop]}>
           The
           <br /> grid
         </CreationCard>
-        <CreationCard bgImage={[vrMobile, vrDesktop]}>
+        <CreationCard href="#" bgImage={[vrMobile, vrDesktop]}>
           From up
           <br /> above VR
         </CreationCard>
-        <CreationCard bgImage={[borealisMobile, borealisDesktop]}>
+        <CreationCard href="#" bgImage={[borealisMobile, borealisDesktop]}>
           Pocket
           <br /> borealis
         </CreationCard>
-        <CreationCard bgImage={[curiosityMobile, curiosityDesktop]}>
+        <CreationCard href="#" bgImage={[curiosityMobile, curiosityDesktop]}>
           The
           <br /> curiosity
         </CreationCard>
-        <CreationCard bgImage={[fishEyeMobile, fishEyeDesktop]}>
+        <CreationCard href="#" bgImage={[fishEyeMobile, fishEyeDesktop]}>
           Make it
           <br /> fisheye
         </CreationCard>
