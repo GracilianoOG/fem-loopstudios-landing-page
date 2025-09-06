@@ -1,5 +1,10 @@
 import Logo from "../Logo";
-import { FooterStyled, FooterText, IconList } from "./styles";
+import {
+  FooterLeftBoxStyled,
+  FooterStyled,
+  FooterText,
+  IconList,
+} from "./styles";
 import fbIcon from "../../assets/images/icon-facebook.svg";
 import twIcon from "../../assets/images/icon-twitter.svg";
 import ptIcon from "../../assets/images/icon-pinterest.svg";
@@ -9,10 +14,10 @@ import FooterNavMenu from "../FooterNavMenu";
 const Footer = () => {
   return (
     <FooterStyled>
-      <div>
+      <FooterLeftBoxStyled>
         <Logo small />
         <FooterNavMenu />
-      </div>
+      </FooterLeftBoxStyled>
       <div>
         <IconList>
           <li>
