@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import type { BackgroundImageType } from "./props";
 import { mediaQueries } from "../../utils/mediaQueries";
+import { overlayEffect } from "../../styles/effects.styled";
 
 export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   --bg-image-url: url(${({ $bgImage }) => $bgImage[0]});
@@ -19,19 +20,10 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   position: relative;
   width: 100%;
 
-  &::before {
-    content: "";
-    display: block;
-    inset: 0;
-    position: absolute;
-  }
+  ${overlayEffect};
 
   &:hover {
     color: var(--color-black);
-
-    &::before {
-      background-color: rgba(255, 255, 255, 0.75);
-    }
   }
 
   ${mediaQueries.mobile} {

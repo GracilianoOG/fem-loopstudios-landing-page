@@ -48,3 +48,18 @@ export const backgroundSlideEffect = css`
     z-index: -1;
   }
 `;
+
+export const overlayEffect = css`
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    inset: 0;
+    position: absolute;
+  }
+
+  &:hover::before {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+`;
