@@ -61,11 +61,13 @@ export const MoreLinkStyled = styled.a`
   letter-spacing: 5px;
   left: 50%;
   margin: 0 auto;
-  padding: 10px 38px;
+  padding: 10px;
   position: absolute;
   transform: translateX(-50%);
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  width: min(100%, 160px);
 
   ${mediaQueries.laptop} {
     margin: 0;
