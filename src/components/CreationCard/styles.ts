@@ -13,9 +13,26 @@ export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
     var(--bg-image-url);
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--color-white);
+  cursor: pointer;
   height: clamp(120px, 30vw, 170px);
   position: relative;
   width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    inset: 0;
+    position: absolute;
+  }
+
+  &:hover {
+    color: var(--color-black);
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
 
   ${mediaQueries.mobile} {
     height: max(120px, 20vw);
@@ -29,7 +46,6 @@ export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
 
 export const CardTitleStyled = styled.h3`
   font-size: clamp(24px, 2.6vw, 32px);
-  color: white;
   position: absolute;
   bottom: 20px;
   left: 20px;
