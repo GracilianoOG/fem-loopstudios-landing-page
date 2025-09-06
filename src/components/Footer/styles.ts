@@ -28,17 +28,6 @@ export const FooterLeftBoxStyled = styled.div`
   }
 `;
 
-export const IconList = styled.ul`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-
-  ${mediaQueries.laptop} {
-    justify-content: end;
-  }
-`;
-
 export const FooterText = styled.p`
   font-family: "Alata", sans-serif;
   font-size: 15.5px;
