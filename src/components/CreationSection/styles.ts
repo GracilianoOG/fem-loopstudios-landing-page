@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mediaQueries } from "../../utils/mediaQueries";
+import { backgroundSlideEffect } from "../../styles/effects.styled";
 
 export const CreationSectionStyled = styled.section`
   padding: 96px var(--page-gutter) 75px;
@@ -61,7 +62,6 @@ export const MoreLinkStyled = styled.a`
   letter-spacing: 5px;
   left: 50%;
   margin: 0 auto;
-  overflow: hidden;
   padding: 10px;
   position: absolute;
   transform: translateX(-50%);
@@ -72,27 +72,9 @@ export const MoreLinkStyled = styled.a`
 
   &:hover {
     color: var(--color-white);
-
-    &::before {
-      --scale-value: 1;
-      transform-origin: left;
-    }
   }
 
-  &::before {
-    --scale-value: 0;
-    background-color: var(--color-black);
-    content: "";
-    height: 140%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transition: transform 0.4s;
-    transform: skewX(-30deg) translate(-60%, -50%) scaleX(var(--scale-value));
-    transform-origin: right;
-    width: 140%;
-    z-index: -1;
-  }
+  ${backgroundSlideEffect};
 
   ${mediaQueries.laptop} {
     inset: auto;
