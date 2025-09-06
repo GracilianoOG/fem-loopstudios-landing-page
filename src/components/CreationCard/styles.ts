@@ -57,3 +57,10 @@ export const CardTitleStyled = styled.h3`
     left: 40px;
   }
 `;
+
+export const CardLinkStyled = styled.a`
+  color: inherit;
+  display: block;
+  height: 100%;
+  width: 100%;
+`;
