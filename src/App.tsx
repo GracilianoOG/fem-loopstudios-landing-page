@@ -1,9 +1,9 @@
-import GlobalStyles from "./styles/GlobalStyles.styled.tsx";
+import GlobalStyles from "./styles/GlobalStyles.styled";
 import InteractiveSection from "./components/InteractiveSection";
 import CreationSection from "./components/CreationSection";
 import Hero from "./components/Hero";
 import Header from "./components/Header";
-import Footer from "./components/Footer/Footer.tsx";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
