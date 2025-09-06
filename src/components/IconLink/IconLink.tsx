@@ -1,10 +1,5 @@
+import type { IconLinkProps } from "./props";
 import { IconLinkStyled } from "./styles";
-
-interface IconLinkProps {
-  icon: string;
-  href: string;
-  alt?: string;
-}
 
 const IconLink = ({ icon, href, alt }: IconLinkProps) => {
   return (
