@@ -29,9 +29,17 @@ export const TextBoxStyled = styled.div`
     max-width: 542px;
     margin: 0;
     position: absolute;
-    padding: 93px 0 0 96px;
+    padding: 45px 0 0 48px;
     right: var(--page-gutter);
     text-align: left;
+  }
+
+  ${mediaQueries.desktop} {
+    padding: 60px 0 0 65px;
+  }
+
+  ${mediaQueries.largeDesktop} {
+    padding: 93px 0 0 96px;
   }
 `;
 
@@ -41,6 +49,11 @@ export const MainHeadingStyled = styled.h2`
   line-height: 1;
 
   ${mediaQueries.laptop} {
+    font-size: 38px;
+    text-align: left;
+  }
+
+  ${mediaQueries.desktop} {
     font-size: 48px;
     text-align: left;
   }
