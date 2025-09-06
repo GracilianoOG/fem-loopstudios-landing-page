@@ -18,6 +18,16 @@ export const FooterStyled = styled.footer`
   }
 `;
 
+export const FooterLeftBoxStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ${mediaQueries.laptop} {
+    align-items: start;
+  }
+`;
+
 export const IconList = styled.ul`
   align-items: center;
   display: flex;
