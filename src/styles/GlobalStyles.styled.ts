@@ -39,6 +39,7 @@ const GlobalStyles = createGlobalStyle`
   #root {
     max-width: var(--page-max-width);
     margin: 0 auto;
+    overflow: hidden;
     position: relative;
   }
 
