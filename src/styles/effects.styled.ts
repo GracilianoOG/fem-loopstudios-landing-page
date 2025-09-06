@@ -59,6 +59,7 @@ export const overlayEffect = css`
     display: block;
     inset: 0;
     position: absolute;
+    transition: background-color 0.2s;
   }
 
   &:focus-within::before,
