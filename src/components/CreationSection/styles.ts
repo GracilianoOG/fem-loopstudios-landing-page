@@ -70,15 +70,15 @@ export const MoreLinkStyled = styled.a`
   text-decoration: none;
   width: min(100%, 160px);
 
-  &:hover {
-    color: var(--color-white);
-  }
-
   ${mediaQueries.laptop} {
     inset: auto;
     margin: 0;
     position: relative;
     transform: none;
+
+    &:hover {
+      color: var(--color-white);
+    }
 
     ${backgroundSlideEffect};
   }
