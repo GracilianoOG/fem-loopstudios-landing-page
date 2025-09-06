@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --color-white: hsl(0, 0%, 100%);
 
     --page-gutter: 23px;
+    --page-max-width: 1440px;
 
     ${mediaQueries.tablet} {
       --page-gutter: 60px;
@@ -33,6 +34,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  #root {
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    position: relative;
   }
 
   img {
