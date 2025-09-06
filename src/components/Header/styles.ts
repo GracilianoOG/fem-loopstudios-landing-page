@@ -5,7 +5,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   padding: 40px var(--page-gutter) 0;
   top: 0px;
   width: 100%;
