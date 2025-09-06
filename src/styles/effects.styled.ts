@@ -24,3 +24,27 @@ export const bottomUnderlineEffect = css`
     --line-scale: 1;
   }
 `;
+
+export const backgroundSlideEffect = css`
+  overflow: hidden;
+
+  &:hover::before {
+    --scale-value: 1;
+    transform-origin: left;
+  }
+
+  &::before {
+    --scale-value: 0;
+    background-color: var(--color-black);
+    content: "";
+    height: 140%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transition: transform 0.4s;
+    transform: skewX(-30deg) translate(-60%, -50%) scaleX(var(--scale-value));
+    transform-origin: right;
+    width: 140%;
+    z-index: -1;
+  }
+`;
