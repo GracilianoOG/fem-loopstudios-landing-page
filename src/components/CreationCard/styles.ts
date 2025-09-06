@@ -20,12 +20,6 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   position: relative;
   width: 100%;
 
-  ${overlayEffect};
-
-  &:hover {
-    color: var(--color-black);
-  }
-
   ${mediaQueries.mobile} {
     height: max(120px, 20vw);
   }
@@ -33,6 +27,12 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   ${mediaQueries.laptop} {
     --bg-image-url: url(${({ $bgImage }) => $bgImage[1]});
     height: 450px;
+
+    &:hover {
+      color: var(--color-black);
+    }
+
+    ${overlayEffect};
   }
 `;
 
