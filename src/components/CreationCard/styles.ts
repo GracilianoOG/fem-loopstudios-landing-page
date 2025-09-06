@@ -55,5 +55,7 @@ export const CardLinkStyled = styled.a`
   color: inherit;
   display: block;
   height: 100%;
+  position: relative;
   width: 100%;
+  z-index: 1;
 `;
