@@ -59,6 +59,7 @@ export const overlayEffect = css`
     position: absolute;
   }
 
+  &:focus-within::before,
   &:hover::before {
     background-color: rgba(255, 255, 255, 0.75);
   }
