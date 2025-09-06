@@ -28,6 +28,7 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
     --bg-image-url: url(${({ $bgImage }) => $bgImage[1]});
     height: 450px;
 
+    &:focus-within,
     &:hover {
       color: var(--color-black);
     }
