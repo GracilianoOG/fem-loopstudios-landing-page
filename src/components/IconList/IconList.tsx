@@ -2,33 +2,33 @@ import fbIcon from "../../assets/images/icon-facebook.svg";
 import twIcon from "../../assets/images/icon-twitter.svg";
 import ptIcon from "../../assets/images/icon-pinterest.svg";
 import igIcon from "../../assets/images/icon-instagram.svg";
-import { IconListStyled } from "./styles";
+import { IconLinkStyled, IconListStyled } from "./styles";
 
 const IconList = () => {
   return (
     <IconListStyled>
       <li>
-        <a href="">
+        <IconLinkStyled href="">
           <img src={fbIcon} alt="" />
-        </a>
+        </IconLinkStyled>
       </li>
 
       <li>
-        <a href="">
+        <IconLinkStyled href="">
           <img src={twIcon} alt="" />
-        </a>
+        </IconLinkStyled>
       </li>
 
       <li>
-        <a href="">
+        <IconLinkStyled href="">
           <img src={ptIcon} alt="" />
-        </a>
+        </IconLinkStyled>
       </li>
 
       <li>
-        <a href="">
+        <IconLinkStyled href="">
           <img src={igIcon} alt="" />
-        </a>
+        </IconLinkStyled>
       </li>
     </IconListStyled>
   );
