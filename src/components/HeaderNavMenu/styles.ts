@@ -7,17 +7,21 @@ import {
 import { mediaQueries, mediaQueriesMax } from "../../utils/mediaQueries";
 
 export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
-  ${({ $hidden }) =>
-    $hidden &&
-    css`
-      display: none;
-    `}
-
   ${mediaQueriesMax.laptop} {
     height: 100vh;
     inset: 0;
     position: absolute;
+    transition: left 0.25s, opacity 0.2s, visibility 0.25s;
+    visibility: visible;
     width: 100%;
+
+    ${({ $hidden }) =>
+      $hidden &&
+      css`
+        left: 100%;
+        opacity: 0;
+        visibility: hidden;
+      `}
   }
 
   ${mediaQueries.laptop} {
