@@ -61,6 +61,7 @@ export const MoreLinkStyled = styled.a`
   letter-spacing: 5px;
   left: 50%;
   margin: 0 auto;
+  overflow: hidden;
   padding: 10px;
   position: absolute;
   transform: translateX(-50%);
@@ -69,9 +70,34 @@ export const MoreLinkStyled = styled.a`
   text-decoration: none;
   width: min(100%, 160px);
 
+  &:hover {
+    color: var(--color-white);
+
+    &::before {
+      --scale-value: 1;
+      transform-origin: left;
+    }
+  }
+
+  &::before {
+    --scale-value: 0;
+    background-color: var(--color-black);
+    content: "";
+    height: 140%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transition: transform 0.4s;
+    transform: skewX(-30deg) translate(-60%, -50%) scaleX(var(--scale-value));
+    transform-origin: right;
+    width: 140%;
+    z-index: -1;
+  }
+
   ${mediaQueries.laptop} {
+    inset: auto;
     margin: 0;
-    position: static;
+    position: relative;
     transform: none;
   }
 `;
