@@ -3,7 +3,7 @@ import {
   navListDefault,
   navListDesktopDefault,
   NavListStyled,
-} from "../../styles/NavStyled";
+} from "../../styles/nav.styled";
 import { mediaQueries, mediaQueriesMax } from "../../utils/mediaQueries";
 
 export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
