@@ -10,6 +10,10 @@ export const FooterListStyled = styled(NavListStyled)`
   ${navListDefault};
   margin-top: 34px;
 
+  ${mediaQueries.tablet} {
+    flex-direction: row;
+  }
+
   ${mediaQueries.laptop} {
     ${navListDesktopDefault};
     margin-top: 26px;
