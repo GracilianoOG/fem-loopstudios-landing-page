@@ -2,7 +2,7 @@ import styled from "styled-components";
 import type { BackgroundImageType } from "./props";
 import { mediaQueries } from "../../utils/mediaQueries";
 
-export const CardStyled = styled.div<{ $bgImage: BackgroundImageType }>`
+export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   --bg-image-url: url(${({ $bgImage }) => $bgImage[0]});
 
   background-image: linear-gradient(
