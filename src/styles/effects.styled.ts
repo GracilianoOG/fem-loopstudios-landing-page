@@ -29,6 +29,7 @@ export const bottomUnderlineEffect = css`
 export const backgroundSlideEffect = css`
   overflow: hidden;
 
+  &:focus-visible::before,
   &:hover::before {
     --scale-value: 1;
     transform-origin: left;
