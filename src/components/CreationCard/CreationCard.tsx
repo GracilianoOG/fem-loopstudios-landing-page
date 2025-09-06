@@ -1,10 +1,12 @@
 import type { CreationCardProps } from "./props";
-import { CardStyled, CardTitleStyled } from "./styles";
+import { CardLinkStyled, CardStyled, CardTitleStyled } from "./styles";
 
 const CreationCard = ({ children, bgImage }: CreationCardProps) => {
   return (
     <CardStyled $bgImage={bgImage}>
-      <CardTitleStyled>{children}</CardTitleStyled>
+      <CardLinkStyled href="">
+        <CardTitleStyled>{children}</CardTitleStyled>
+      </CardLinkStyled>
     </CardStyled>
   );
 };
