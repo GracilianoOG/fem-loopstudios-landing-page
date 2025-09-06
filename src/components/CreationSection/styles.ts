@@ -76,6 +76,7 @@ export const MoreLinkStyled = styled.a`
     position: relative;
     transform: none;
 
+    &:focus-visible,
     &:hover {
       color: var(--color-white);
     }
