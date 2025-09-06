@@ -20,6 +20,7 @@ export const bottomUnderlineEffect = css`
     width: 1.5rem;
   }
 
+  &:focus-visible::before,
   &:hover::before {
     --line-scale: 1;
   }
