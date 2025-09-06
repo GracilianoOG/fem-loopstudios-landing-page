@@ -31,7 +31,7 @@ export const MainHeadingStyled = styled.h2`
   }
 `;
 
-export const CardsContainerStyled = styled.div`
+export const CardsContainerStyled = styled.ul`
   display: grid;
   gap: 24px;
 
