@@ -6,10 +6,12 @@ import { overlayEffect } from "../../styles/effects.styled";
 export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   --bg-image-url: url(${({ $bgImage }) => $bgImage[0]});
   --gradient-position: to right;
+  --gradient-color-1: rgba(0, 0, 0, 0.55);
+  --gradient-color-2: transparent;
   --gradient: linear-gradient(
     var(--gradient-position),
-    rgba(0, 0, 0, 0.55) 10%,
-    transparent 70%
+    var(--gradient-color-1) 10%,
+    var(--gradient-color-2) 70%
   );
 
   background-image: var(--gradient), var(--bg-image-url);
