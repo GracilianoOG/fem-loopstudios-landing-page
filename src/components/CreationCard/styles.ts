@@ -42,7 +42,6 @@ export const CardTitleStyled = styled.h3`
   position: absolute;
   bottom: 1.25rem;
   left: 1.25rem;
-  // max-width: 110px;
   line-height: 1;
 
   ${mediaQueries.largeDesktop} {
