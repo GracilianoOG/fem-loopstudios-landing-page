@@ -3,11 +3,12 @@ import { mediaQueries } from "../../utils/mediaQueries";
 
 export const HeaderStyled = styled.header<{ $scrolled: boolean }>`
   --time: 0.2s;
+  --padding: 2.5rem;
   align-items: center;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  padding: 2.5rem var(--page-gutter) 2.5rem;
+  padding: var(--padding) var(--page-gutter) var(--padding);
   top: 0;
   transition: background-color var(--time), backdrop-filter var(--time),
     padding var(--time);
@@ -27,7 +28,8 @@ export const HeaderStyled = styled.header<{ $scrolled: boolean }>`
     ${({ $scrolled }) =>
       $scrolled &&
       css`
-        padding: 3rem var(--page-gutter) 3rem;
+        --padding: 3rem;
+        padding-top: var(--padding);
       `}
   }
 `;
