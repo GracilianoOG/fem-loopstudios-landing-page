@@ -23,10 +23,6 @@ export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
         visibility: hidden;
       `}
   }
-
-  ${mediaQueries.laptop} {
-    display: initial;
-  }
 `;
 
 export const HeaderListStyled = styled(NavListStyled)`
