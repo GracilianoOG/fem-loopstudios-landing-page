@@ -11,6 +11,9 @@ const GlobalStyles = createGlobalStyle`
     --page-gutter: 1.4375rem;
     --page-max-width: 90rem;
 
+    --font-primary: "Josefin Sans", sans-serif;
+    --font-secondary: "Alata", sans-serif;
+
     ${mediaQueries.tablet} {
       --page-gutter: 3.75rem;
     }
