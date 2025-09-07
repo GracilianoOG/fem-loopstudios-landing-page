@@ -11,7 +11,11 @@ const InteractiveSection = () => {
   return (
     <InteractiveSectionStyled>
       <picture>
-        <source media="(min-width: 992px)" srcSet={vrImgDesktop} />
+        <source
+          media="(min-width: 992px)"
+          srcSet={vrImgDesktop}
+          type="image/jpeg"
+        />
         <img
           src={vrImgMobile}
           alt="A man wearing VR classes mimicking a monster."
