@@ -15,7 +15,6 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-white);
-  cursor: pointer;
   height: clamp(7.5rem, 30vw, 10.625rem);
   position: relative;
   width: 100%;
