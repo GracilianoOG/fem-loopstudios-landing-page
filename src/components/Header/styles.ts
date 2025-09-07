@@ -1,17 +1,31 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { mediaQueries } from "../../utils/mediaQueries";
 
-export const HeaderStyled = styled.header`
+export const HeaderStyled = styled.header<{ $scrolled: boolean }>`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  padding: 2.5rem var(--page-gutter) 0;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
+  position: fixed;
+  padding: 2.5rem var(--page-gutter) 2.5rem;
+  top: 0;
+  transition: background-color 0.2s, backdrop-filter 0.2s, padding 0.2s;
+  width: min(100%, var(--page-max-width));
+  z-index: 3;
+
+  ${({ $scrolled }) =>
+    $scrolled &&
+    css`
+      backdrop-filter: blur(2px);
+      background-color: rgba(0, 0, 0, 0.8);
+    `}
 
   ${mediaQueries.laptop} {
     padding-top: 4rem;
+
+    ${({ $scrolled }) =>
+      $scrolled &&
+      css`
+        padding: 3rem var(--page-gutter) 3rem;
+      `}
   }
 `;
