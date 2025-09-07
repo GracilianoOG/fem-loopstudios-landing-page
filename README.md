@@ -83,6 +83,11 @@ npm start
 - [Frontend Mentor](https://www.frontendmentor.io/)
 - [Visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
 - [Context API e TypeScript: guia prático para devs](https://www.alura.com.br/artigos/context-api-typescript-utilizar-superpoder-dupla)
+- [How to Create a Fixed Header Which Animates on Page Scroll ](https://webdesign.tutsplus.com/how-to-create-a-fixed-header-which-animates-on-page-scroll--cms-26672t)
+- [Throttling in JavaScript Easiest Explanation](https://dev.to/jeetvora331/throttling-in-javascript-easiest-explanation-1081)
+- [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+- [How and when to debounce or throttle in React](https://blog.logrocket.com/how-and-when-to-debounce-or-throttle-in-react/)
+- [How to define type for a function callback](https://stackoverflow.com/a/69351706)
 
 ## 🧑🏻‍💻 Author
 
