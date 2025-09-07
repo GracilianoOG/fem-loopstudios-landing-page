@@ -6,13 +6,14 @@ import {
   StudioDescriptionStyled,
   TextBoxStyled,
 } from "./styles";
+import { breakpoints } from "../../utils/breakpoints";
 
 const InteractiveSection = () => {
   return (
     <InteractiveSectionStyled>
       <picture>
         <source
-          media="(min-width: 992px)"
+          media={`(min-width: ${breakpoints.md})`}
           srcSet={vrImgDesktop}
           type="image/jpeg"
         />
