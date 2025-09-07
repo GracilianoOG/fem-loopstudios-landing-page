@@ -5,8 +5,9 @@ import { overlayEffect } from "../../styles/effects.styled";
 
 export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   --bg-image-url: url(${({ $bgImage }) => $bgImage[0]});
+  --gradient-position: to right;
   --gradient: linear-gradient(
-    to right,
+    var(--gradient-position),
     rgba(0, 0, 0, 0.55) 10%,
     transparent 70%
   );
@@ -25,6 +26,7 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
 
   ${mediaQueries.laptop} {
     --bg-image-url: url(${({ $bgImage }) => $bgImage[1]});
+    --gradient-position: to top;
     height: 28.125rem;
 
     &:focus-within,
