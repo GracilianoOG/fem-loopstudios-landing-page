@@ -32,6 +32,11 @@ export const HeroTextStyled = styled.h2`
   text-transform: uppercase;
   width: 100%;
 
+  ${mediaQueries.tablet} {
+    font-size: 3rem;
+    max-width: 24.5rem;
+  }
+
   ${mediaQueries.laptop} {
     font-size: 4.5rem;
     max-width: 40.75rem;
