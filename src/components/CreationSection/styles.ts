@@ -26,6 +26,10 @@ export const MainHeadingStyled = styled.h2`
   text-align: center;
   font-size: 2rem;
 
+  ${mediaQueries.tablet} {
+    font-size: 2.5rem;
+  }
+
   ${mediaQueries.laptop} {
     font-size: 3rem;
   }

@@ -48,6 +48,10 @@ export const MainHeadingStyled = styled.h2`
   font-size: 2rem;
   line-height: 1;
 
+  ${mediaQueries.tablet} {
+    font-size: 2.5rem;
+  }
+
   ${mediaQueries.laptop} {
     font-size: 2.375rem;
     text-align: left;
