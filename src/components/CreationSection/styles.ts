@@ -55,7 +55,7 @@ export const CardsContainerStyled = styled.ul`
 export const MoreLinkStyled = styled.a`
   border: 0.125rem solid var(--color-black);
   bottom: 0px;
-  color: black;
+  color: var(--color-black);
   font-size: 0.875rem;
   font-family: var(--font-secondary);
   font-weight: 300;
