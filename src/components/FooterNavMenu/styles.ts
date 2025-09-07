@@ -8,7 +8,7 @@ import { mediaQueries } from "../../utils/mediaQueries";
 
 export const FooterListStyled = styled(NavListStyled)`
   ${navListDefault};
-  margin-top: 34px;
+  margin-top: 2.125rem;
 
   ${mediaQueries.tablet} {
     flex-direction: row;
@@ -16,6 +16,6 @@ export const FooterListStyled = styled(NavListStyled)`
 
   ${mediaQueries.laptop} {
     ${navListDesktopDefault};
-    margin-top: 26px;
+    margin-top: 1.625rem;
   }
 `;

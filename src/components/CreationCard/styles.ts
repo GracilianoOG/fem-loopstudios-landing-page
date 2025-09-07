@@ -16,17 +16,17 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   background-size: cover;
   color: var(--color-white);
   cursor: pointer;
-  height: clamp(120px, 30vw, 170px);
+  height: clamp(7.5rem, 30vw, 10.625rem);
   position: relative;
   width: 100%;
 
   ${mediaQueries.mobile} {
-    height: max(120px, 20vw);
+    height: max(7.5rem, 20vw);
   }
 
   ${mediaQueries.laptop} {
     --bg-image-url: url(${({ $bgImage }) => $bgImage[1]});
-    height: 450px;
+    height: 28.125rem;
 
     &:focus-within,
     &:hover {
@@ -38,16 +38,16 @@ export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
 `;
 
 export const CardTitleStyled = styled.h3`
-  font-size: clamp(24px, 2.6vw, 32px);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 1.25rem;
+  left: 1.25rem;
   // max-width: 110px;
   line-height: 1;
 
   ${mediaQueries.largeDesktop} {
-    bottom: 32px;
-    left: 40px;
+    bottom: 2rem;
+    left: 2.5rem;
   }
 `;
 

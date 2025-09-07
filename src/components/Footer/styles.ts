@@ -5,16 +5,16 @@ export const FooterStyled = styled.footer`
   background-color: var(--color-black);
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 3.125rem;
   flex-direction: column;
-  margin-top: 95px;
-  padding: 56px var(--page-gutter);
+  margin-top: 5.9375rem;
+  padding: 3.5rem var(--page-gutter);
 
   ${mediaQueries.laptop} {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 44px;
-    margin-top: 109px;
+    padding-top: 2.75rem;
+    margin-top: 6.8125rem;
   }
 `;
 
@@ -30,12 +30,12 @@ export const FooterLeftBoxStyled = styled.div`
 
 export const FooterText = styled.p`
   font-family: "Alata", sans-serif;
-  font-size: 15.5px;
-  margin-top: 18px;
+  font-size: 0.9688rem;
+  margin-top: 1.125rem;
   color: var(--color-grey);
 
   ${mediaQueries.laptop} {
-    font-size: 15.6px;
-    margin-top: 26px;
+    font-size: 0.975rem;
+    margin-top: 1.625rem;
   }
 `;

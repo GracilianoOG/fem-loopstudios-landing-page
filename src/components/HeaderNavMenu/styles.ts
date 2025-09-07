@@ -33,7 +33,7 @@ export const HeaderListStyled = styled(NavListStyled)`
   ${mediaQueriesMax.laptop} {
     align-items: start;
     background-color: black;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     height: 100%;

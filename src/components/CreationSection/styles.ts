@@ -3,37 +3,37 @@ import { mediaQueries } from "../../utils/mediaQueries";
 import { backgroundSlideEffect } from "../../styles/effects.styled";
 
 export const CreationSectionStyled = styled.section`
-  padding: 96px var(--page-gutter) 75px;
+  padding: 6rem var(--page-gutter) 4.6875rem;
   position: relative;
 
   ${mediaQueries.laptop} {
-    padding-top: 180px;
+    padding-top: 11.25rem;
   }
 `;
 
 export const HeadingContainerStyled = styled.div`
-  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
 
   ${mediaQueries.laptop} {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 75px;
+    margin-bottom: 4.6875rem;
   }
 `;
 
 export const MainHeadingStyled = styled.h2`
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
 
   ${mediaQueries.laptop} {
-    font-size: 48px;
+    font-size: 3rem;
   }
 `;
 
 export const CardsContainerStyled = styled.ul`
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
 
   ${mediaQueries.mobile} {
     grid-template-columns: repeat(2, 1fr);
@@ -48,27 +48,27 @@ export const CardsContainerStyled = styled.ul`
   }
 
   ${mediaQueries.largeDesktop} {
-    gap: 30px;
+    gap: 1.875rem;
   }
 `;
 
 export const MoreLinkStyled = styled.a`
-  border: 2px solid black;
+  border: 0.125rem solid black;
   bottom: 0px;
   color: black;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Alata", sans-serif;
   font-weight: 300;
-  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
   left: 50%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.625rem;
   position: absolute;
   transform: translateX(-50%);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  width: min(100%, 160px);
+  width: min(100%, 10rem);
 
   ${mediaQueries.laptop} {
     inset: auto;

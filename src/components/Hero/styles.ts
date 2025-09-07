@@ -8,7 +8,7 @@ export const HeroStyled = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: min(100vh, 650px);
+  height: min(100vh, 40.625rem);
   padding: var(--page-gutter);
   position: relative;
 
@@ -18,24 +18,24 @@ export const HeroStyled = styled.section`
 `;
 
 export const HeroTextStyled = styled.h2`
-  border: 2px solid white;
+  border: 0.125rem solid white;
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  font-size: 40px;
-  padding: 16px;
+  font-size: 2.5rem;
+  padding: 1rem;
   position: relative;
   top: 50%;
   line-height: 1;
-  padding: 18px 23px;
+  padding: 1.125rem 1.4375rem;
   transform: translateY(-50%);
   text-transform: uppercase;
   width: 100%;
 
   ${mediaQueries.laptop} {
-    font-size: 72px;
-    max-width: 652px;
-    padding: 30px 40px;
+    font-size: 4.5rem;
+    max-width: 40.75rem;
+    padding: 1.875rem 2.5rem;
     top: 62%;
   }
 `;
