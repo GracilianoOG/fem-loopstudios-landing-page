@@ -3,21 +3,10 @@ import Logo from "../Logo";
 import MobileNavMenuProvider from "../../providers/MobileNavMenuProvider";
 import HeaderNavMenu from "../HeaderNavMenu";
 import Hamburger from "../Hamburger";
-import { useEffect, useState } from "react";
+import useScrollStatus from "../../hooks/useScrollStatus";
 
 const Header = () => {
-  const [hasScrolled, setHasScrolled] = useState<boolean>(false);
-
-  const handleScroll = () => {
-    const offset = 150;
-    setHasScrolled(window.pageYOffset >= offset);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const hasScrolled = useScrollStatus(150);
 
   return (
     <MobileNavMenuProvider>
