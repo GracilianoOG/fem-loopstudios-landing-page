@@ -6,7 +6,7 @@ import Hamburger from "../Hamburger";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState<boolean>(false);
 
   const handleScroll = () => {
     const offset = 150;
