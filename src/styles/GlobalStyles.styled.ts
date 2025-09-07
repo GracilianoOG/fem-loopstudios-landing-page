@@ -8,23 +8,23 @@ const GlobalStyles = createGlobalStyle`
     --color-light-grey: hsl(0, 0%, 85%);
     --color-white: hsl(0, 0%, 100%);
 
-    --page-gutter: 23px;
-    --page-max-width: 1440px;
+    --page-gutter: 1.4375rem;
+    --page-max-width: 90rem;
 
     ${mediaQueries.tablet} {
-      --page-gutter: 60px;
+      --page-gutter: 3.75rem;
     }
 
     ${mediaQueries.laptop} {
-      --page-gutter: 100px;
+      --page-gutter: 6.25rem;
     }
 
     ${mediaQueries.desktop} {
-      --page-gutter: 132px;
+      --page-gutter: 8.25rem;
     }
 
     ${mediaQueries.largeDesktop} {
-      --page-gutter: 164px;
+      --page-gutter: 10.25rem;
     }
   }
 
