@@ -5,13 +5,13 @@ import { overlayEffect } from "../../styles/effects.styled";
 
 export const CardStyled = styled.li<{ $bgImage: BackgroundImageType }>`
   --bg-image-url: url(${({ $bgImage }) => $bgImage[0]});
+  --gradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.55) 10%,
+    transparent 70%
+  );
 
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.55) 10%,
-      transparent 70%
-    ),
-    var(--bg-image-url);
+  background-image: var(--gradient), var(--bg-image-url);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-white);
