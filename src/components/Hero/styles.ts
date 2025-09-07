@@ -27,6 +27,7 @@ export const HeroTextStyled = styled.h2`
   position: relative;
   top: 50%;
   line-height: 1;
+  max-width: 20.9375rem;
   padding: 1.125rem 1.4375rem;
   transform: translateY(-50%);
   text-transform: uppercase;
