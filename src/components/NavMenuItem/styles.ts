@@ -5,7 +5,7 @@ import { mediaQueries } from "../../utils/mediaQueries";
 export const NavItemStyled = styled.li``;
 
 export const NavLinkStyled = styled.a`
-  color: white;
+  color: var(--color-white);
   font-family: inherit;
   font-size: inherit;
   text-decoration: none;

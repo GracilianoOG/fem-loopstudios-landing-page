@@ -32,7 +32,7 @@ export const HeaderNavMenuStyled = styled.nav<{ $hidden: boolean }>`
 export const HeaderListStyled = styled(NavListStyled)`
   ${mediaQueriesMax.laptop} {
     align-items: start;
-    background-color: black;
+    background-color: var(--color-black);
     font-size: 1.5rem;
     font-family: var(--font-primary);
     font-weight: 300;

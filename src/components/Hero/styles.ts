@@ -18,8 +18,8 @@ export const HeroStyled = styled.section`
 `;
 
 export const HeroTextStyled = styled.h2`
-  border: 0.125rem solid white;
-  color: white;
+  border: 0.125rem solid var(--color-white);
+  color: var(--color-white);
   font-family: var(--font-primary);
   font-weight: 300;
   font-size: 2.5rem;
