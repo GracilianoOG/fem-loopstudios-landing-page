@@ -8,7 +8,6 @@ export const NavLinkStyled = styled.a`
   color: var(--color-white);
   font-family: inherit;
   font-size: inherit;
-  text-decoration: none;
 
   ${mediaQueries.laptop} {
     ${bottomUnderlineEffect};

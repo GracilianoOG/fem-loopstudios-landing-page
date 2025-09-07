@@ -67,7 +67,6 @@ export const MoreLinkStyled = styled.a`
   transform: translateX(-50%);
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
   width: min(100%, 10rem);
 
   ${mediaQueries.laptop} {
