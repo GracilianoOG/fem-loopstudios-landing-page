@@ -61,7 +61,7 @@ export const MainHeadingStyled = styled.h2`
 
 export const StudioDescriptionStyled = styled.p`
   color: var(--color-grey);
-  font-family: "Alata", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 0.9563rem;
   line-height: 1.62;
   margin-top: 1rem;

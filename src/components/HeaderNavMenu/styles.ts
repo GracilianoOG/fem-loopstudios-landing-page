@@ -34,7 +34,7 @@ export const HeaderListStyled = styled(NavListStyled)`
     align-items: start;
     background-color: black;
     font-size: 1.5rem;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: var(--font-primary);
     font-weight: 300;
     height: 100%;
     justify-content: center;

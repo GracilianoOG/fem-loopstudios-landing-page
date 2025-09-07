@@ -57,7 +57,7 @@ export const MoreLinkStyled = styled.a`
   bottom: 0px;
   color: black;
   font-size: 0.875rem;
-  font-family: "Alata", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
   letter-spacing: 0.3125rem;
   left: 50%;

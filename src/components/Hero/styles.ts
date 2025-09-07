@@ -20,7 +20,7 @@ export const HeroStyled = styled.section`
 export const HeroTextStyled = styled.h2`
   border: 0.125rem solid white;
   color: white;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 300;
   font-size: 2.5rem;
   padding: 1rem;

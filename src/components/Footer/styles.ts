@@ -29,7 +29,7 @@ export const FooterLeftBoxStyled = styled.div`
 `;
 
 export const FooterText = styled.p`
-  font-family: "Alata", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 0.9688rem;
   margin-top: 1.125rem;
   color: var(--color-grey);
